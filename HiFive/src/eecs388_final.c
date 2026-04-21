@@ -41,6 +41,10 @@ int read_from_pi(int devid)
     // You code goes here (Use Lab 09-option1 for reference)
     // After performing Task-2 at dnn.py code, modify this part to read angle values from Raspberry Pi.
 
+    //return the byte read as an int
+    return (int)ser_read(devid);
+
+
 }
 
 void steering(int gpio, int pos)
