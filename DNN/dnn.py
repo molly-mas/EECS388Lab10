@@ -97,9 +97,9 @@ while(1):
 			pass
 			#Your code here.
 
-			# write a byte as a formated str with newline
+			# write a byte as a str with newline
 			# delimiter using encode and utf8
-			ser1.write(f"{deg:.2f}\n".encode("utf-8"))
+			ser1.write(f"{deg}\n".encode("utf-8"))
 
 		
         
