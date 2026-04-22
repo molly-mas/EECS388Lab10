@@ -99,7 +99,7 @@ while(1):
 
 			# write a byte as a str with newline
 			# delimiter using encode and utf8
-			ser1.write(f"{deg}\n".encode("utf-8"))
+			ser1.write(f"{int(deg)}\n".encode("utf-8"))
 
 		
         
