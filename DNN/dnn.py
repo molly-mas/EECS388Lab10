@@ -100,7 +100,7 @@ while(1):
 			#convert deg to an int
 			angle = int(deg)
 			#write a byte of the angle
-			ser1.write(bytes([angle]))
+			ser1.write(bytes(angle, 'utf-8'))
 
 		
         
