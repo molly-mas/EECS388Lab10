@@ -94,7 +94,7 @@ while(1):
 		# prediction from the model. This is so that
 		# the HiFive can run the other functions in between
 		if count%4 == 0:
-			pass
+			
 			#Your code here.
 
 			# write a byte as a str with newline
