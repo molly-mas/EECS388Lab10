@@ -97,10 +97,9 @@ while(1):
 			pass
 			#Your code here.
 
-			#convert deg to an int
-			angle = int(deg)
-			#write a byte of the angle + a newline to use as a delimeter
-			ser1.write(f"{angle}\n".encode())
+			# write a byte as a formated str with newline
+			# delimiter using encode and utf8
+			ser1.write(f"{deg:.2f}\n".encode("utf-8"))
 
 		
         
