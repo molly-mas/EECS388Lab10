@@ -42,6 +42,7 @@ int read_from_pi(int devid)
     // After performing Task-2 at dnn.py code, modify this part to read angle values from Raspberry Pi.
 
     //return the byte read as an int
+    printf(ser_read(devid));
     return (int)ser_read(devid);
 
 
