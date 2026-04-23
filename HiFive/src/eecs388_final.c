@@ -18,6 +18,7 @@ uint8_t dist_l = ser_read(devid);
 uint8_t dist_h = ser_read(devid);
 uint16_t dist = 0;
 dist = dist_l | (dist_h << 8);
+printf(dist);
 if(dist > 200){
 gpio_write(RED_LED,OFF);
 gpio_write(GREEN_LED, ON);
@@ -33,7 +34,7 @@ gpio_write(RED_LED, ON);
 else if(dist <= 60){
 gpio_write(GREEN_LED,OFF);
 gpio_write(RED_LED, ON);
-delay(100);
+delay(150);
 gpio_mode(RED_LED, OFF);
 }
 }
